@@ -4,6 +4,7 @@ body {
     background: linear-gradient(to bottom, #ffafbd, #ffc3a0);
     text-align: center;
     color: #4a004a;
+    overflow-x: hidden;
 }
 
 .section {
@@ -21,17 +22,6 @@ body {
 
 .letter p {
     font-size: 1.2rem;
-    line-height: 1.8;
-}
-
-.reasons ul {
-    list-style: none;
-    padding: 0;
-}
-
-.reasons li {
-    font-size: 1.2rem;
-    margin: 10px 0;
 }
 
 button {
@@ -40,32 +30,12 @@ button {
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    transform: scale(1.05);
-}
-
-#hiddenMessage {
-    margin-top: 20px;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.question h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
 .yes {
     background-color: #ff3366;
     color: white;
-    margin-right: 15px;
-}
-
-.yes:hover {
-    background-color: #e6004c;
 }
 
 .no {
@@ -74,9 +44,30 @@ button:hover {
     position: absolute;
 }
 
-#answer {
-    margin-top: 30px;
-    font-size: 1.4rem;
-    font-weight: bold;
+/* Teddy animation */
+.teddy {
+    width: 250px;
+    margin-top: 20px;
+    animation: bounce 2s infinite;
 }
 
+@keyframes bounce {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Hearts rain */
+.hearts::before {
+    content: "❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    animation: fall 5s linear infinite;
+    font-size: 24px;
+}
+
+@keyframes fall {
+    from { top: -10px; }
+    to { top: 100vh; }
+}
