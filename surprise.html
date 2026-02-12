@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forever ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Hearts animation -->
+<div class="hearts"></div>
+
+<div class="section">
+    <h1>This is for you 🧸❤️</h1>
+
+    <img src="https://i.imgur.com/8Km9tLL.png"
+         class="teddy"
+         alt="Teddy">
+
+    <p style="font-size:1.3rem;">
+        If I could give you one thing,<br>
+        it would be this hug 🧸💖
+    </p>
+
+    <h2>Will you stay with me forever? 💍</h2>
+
+    <button class="yes" onclick="foreverYes()">YES 💖</button>
+
+    <p id="finalAnswer"></p>
+
+    <!-- Music controls -->
+    <div style="margin-top:20px;">
+        <button onclick="playMusic()">Play Music 🎶</button>
+        <input type="range" min="0" max="1" step="0.1"
+               onchange="setVolume(this.value)">
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
