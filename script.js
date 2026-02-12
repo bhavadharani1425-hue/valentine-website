@@ -1,19 +1,22 @@
-function showMessage() {
-    document.getElementById("hiddenMessage").innerHTML =
-        "Idhu website illa ❤️<br>Idhu en feelings 💖<br>Happy Valentine’s Day 😘";
-}
-
-function yesClicked() {
-    document.getElementById("answer").innerHTML =
-        "YAYYYY 🥹❤️<br>I knew it!<br>You made my day 💖";
-}
-
 function moveNo() {
-    const noBtn = document.getElementById("noBtn");
+    const btn = document.getElementById("noBtn");
+    btn.style.left = Math.random() * 300 + "px";
+    btn.style.top = Math.random() * 300 + "px";
+}
 
-    const x = Math.floor(Math.random() * 300);
-    const y = Math.floor(Math.random() * 300);
+function goNext() {
+    window.location.href = "surprise.html";
+}
 
-    noBtn.style.left = x + "px";
-    noBtn.style.top = y + "px";
+function playMusic() {
+    document.getElementById("bgMusic").play();
+}
+
+function setVolume(val) {
+    document.getElementById("bgMusic").volume = val;
+}
+
+function foreverYes() {
+    document.getElementById("finalAnswer").innerHTML =
+        "You just made my heart complete 🥹❤️<br>Forever starts now 💍";
 }
