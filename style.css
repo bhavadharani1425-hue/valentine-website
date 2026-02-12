@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #ffafbd, #ffc3a0);
+    text-align: center;
+    color: #4a004a;
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+.welcome h1 {
+    font-size: 3rem;
+}
+
+.welcome span {
+    color: #ff0055;
+    font-weight: bold;
+}
+
+.letter p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.reasons ul {
+    list-style: none;
+    padding: 0;
+}
+
+.reasons li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#hiddenMessage {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.question h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.yes {
+    background-color: #ff3366;
+    color: white;
+    margin-right: 15px;
+}
+
+.yes:hover {
+    background-color: #e6004c;
+}
+
+.no {
+    background-color: #999;
+    color: white;
+    position: absolute;
+}
+
+#answer {
+    margin-top: 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
