@@ -61,6 +61,12 @@ button {
     margin-top: 20px;
     animation: bounce 2s infinite;
 }
+.big-heart {
+    font-size: 120px;
+    animation: heartbeat 1.5s infinite;
+    margin-top: 20px;
+}
+
 
 @keyframes bounce {
     0%,100% { transform: translateY(0); }
