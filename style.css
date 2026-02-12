@@ -4,7 +4,6 @@ body {
     background: linear-gradient(to bottom, #ffafbd, #ffc3a0);
     text-align: center;
     color: #4a004a;
-    overflow-x: hidden;
 }
 
 .section {
@@ -22,8 +21,10 @@ body {
 
 .letter p {
     font-size: 1.2rem;
+    line-height: 1.8;
 }
 
+/* Common buttons */
 button {
     padding: 15px 30px;
     font-size: 1.1rem;
@@ -44,6 +45,16 @@ button {
     position: absolute;
 }
 
+/* Round photo style */
+.person-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ff3366;
+    margin-top: 20px;
+}
+
 /* Teddy animation */
 .teddy {
     width: 250px;
@@ -54,20 +65,4 @@ button {
 @keyframes bounce {
     0%,100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
-}
-
-/* Hearts rain */
-.hearts::before {
-    content: "❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️";
-    position: fixed;
-    top: -10px;
-    left: 0;
-    width: 100%;
-    animation: fall 5s linear infinite;
-    font-size: 24px;
-}
-
-@keyframes fall {
-    from { top: -10px; }
-    to { top: 100vh; }
 }
